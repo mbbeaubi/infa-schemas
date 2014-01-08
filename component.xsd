@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/component" xmlns:tns="http://www.example.org/component" elementFormDefault="qualified">
+
+
+
+    <element name="descriptor">
+    	<complexType>
+    		<sequence>
+    			<element name="requires" maxOccurs="1" minOccurs="0">
+    				<complexType>
+    					<sequence>
+    						<element name="component" maxOccurs="unbounded" minOccurs="0">
+    							<complexType>
+    								<sequence>
+    									<element name="groupId"
+    										type="string" maxOccurs="1" minOccurs="1">
+    									</element>
+    									<element name="artifactId"
+    										type="string" maxOccurs="1" minOccurs="1">
+    									</element>
+    									<element name="version"
+    										type="string" maxOccurs="1" minOccurs="1">
+    									</element>
+    								</sequence>
+    							</complexType></element>
+    					</sequence>
+    				</complexType></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>
